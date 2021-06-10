@@ -5,8 +5,45 @@
         body{background-color: #C3E0E5;
             
         }
+        #pic1{
+            width: 30%;
+            height: 25%;
+            margin-left:35% ;
+            margin-bottom: 75px;
+            margin-top: 50px;
+            opacity: 50%;
+            transition-duration: 300ms;
+            
+        }
 
-    
+        #pic1:hover{
+            opacity: 100%;
+            transform: scale(1.5);
+            margin-top: 50px;
+            margin-bottom: 75px;
+
+        }
+        #pic1:hover .header1{
+            height: 100px;
+
+        }
+
+        .header1{
+            background-color: #274472;
+            
+        }
+        h1{
+            color:black;
+            text-align: center;
+            font-size: 90px;
+            font-family: Georgia;
+            
+        }
+
+        #pic2{
+            transform: scale(2);
+            
+        }
 
     </style>
     </head>
@@ -14,13 +51,11 @@
 
     <body>
         <h1>Prof.Majid Samii</h1>
-        <img src="majidsamii.jpg" alt="majidsamii">
-        <p>just trying</p>
-        <p>is this okay</p>
-
-        
-
-        </p>
+        <div class="header1">
+        <img id="pic1" src="majidsamii.jpg" alt="majidsamii">
+        <img id="pic2" src="samii.jpg" alt="majidsamii">
+        <img id="pic3" src="samii2.jpeg" alt="majidsamii">
+        </div>
 
     </body>
 </html>
