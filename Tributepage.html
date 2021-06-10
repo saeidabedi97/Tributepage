@@ -14,7 +14,8 @@
             align-items: center;
             /* justify-content: space-around; */
             padding: 30px;
-            
+            border-radius: 10%;
+            border: 10px solid gray;
             
         }
         h1{
@@ -25,29 +26,58 @@
             
         }
        
+        h2{
+            font-size: 45px;
+            text-align: center;
 
+        }
        
-       #pic3{
+       #pic1{
            transform: scale(1.5);
            border-radius: 50%;
+           border: 10px solid gray;
        }
 
-       p{
+       #quote1{
            color: blanchedalmond;
            font-size: 70px;
        }
+
+       .Biography{
+        background-color: #274472;
+
+       }
+
+       h3{
+           font-size: 60px;
+           color: blanchedalmond;
+       }
+
+       #name,#Familyname {
+           font-size: 45px;
+           color: blanchedalmond;
+       }
     </style>
     </head>
-
-
+    
     <body>
         <h1>Prof.Majid Samii</h1>
+        <h2>Simply,the best neurosurgeon in the world</h2>
+        
         <div class="header1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam rutrum, 
-            leo at mattis ornare, orci diam lobortis ipsum,<br> in venenatis nibh leo ut ex.
-            Donec consectetur in nunc et varius.  </p>
-        <img id="pic3" src="samii2.jpeg" alt="majidsamii">
+        <p id="quote1">Majid Samii is an Iranian neurosurgeon
+            and medical scientist.<br>He has been awarded 
+        many times as a best neurosurgeon in the world.  </p>
+        <img id="pic1" src="samii2.jpeg" alt="majidsamii">
         </div>
+
+        <div class="Biography">
+            <h3><strong>Biography</strong></h3>
+            <p id="name">Name: Majid<p>
+            <p id="Familyname">Familyname: Samii </p>
+
+        </div>
+
 
     </body>
 </html>
