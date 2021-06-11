@@ -1,83 +1,159 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head >
+        <title>Prof.Samii</title>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
     <style>
-        body{background-color: #C3E0E5;
-            margin:0 auto;
+        body{
+            margin: 0 auto;
         }
-       
-        .header1{
-            background-color: #274472;
+        #main{background-color: #E3E0D1;
+            border:10px solid #224255;
+            border-radius: 8px;
             display: grid;
-            /* grid-auto-flow: column; */
-            grid-template-columns: auto  auto;
-            align-items: center;
-            /* justify-content: space-around; */
-            padding: 30px;
-            border-radius: 10%;
-            border: 10px solid gray;
-            
-        }
-        h1{
-            color:black;
-            text-align: center;
-            font-size: 90px;
-            font-family: Georgia;
-            
+            grid-template-rows: auto auto auto auto;
+            justify-items: center;
         }
        
-        h2{
+        #img-div{
+            
+            display: grid;
+            grid-template-rows: auto auto;
+            justify-items: center;
+            padding: 0px;
+            
+            
+           
+            
+        }
+        #title{
+            background-color: #224255;
+            color:whitesmoke;
+            padding: 15px;
             font-size: 45px;
-            text-align: center;
+            font-family: Arial;
+            border-radius: 10px;
 
         }
+        
+        #img-caption{
+            font-size: 23px;
+            padding: 50px;
+            font-family: monospace;
+        }
        
-       #pic1{
-           transform: scale(1.5);
+       #image{
+           transform: scale(0.75);
            border-radius: 50%;
-           border: 10px solid gray;
+           border: 10px solid #224255;
+           max-width: 100%;
+           height: auto;
        }
 
        #quote1{
-           color: blanchedalmond;
-           font-size: 70px;
+           
+           color: white;
+           font-size: 25px;
+           font-family: Arial;
+           
        }
 
-       .Biography{
-        background-color: #274472;
-
+       #tribute-info{
+        background-color: #224255;
+        display: grid;
+        justify-items: center; 
+        border-radius: 10px;
+        padding: 30px;
+        margin: 0 auto;
+        height: 93%;
+        
+        
+        
        }
+
 
        h3{
-           font-size: 60px;
+           font-size: 40px;
            color: blanchedalmond;
+           border-bottom:5px solid #D93D59;
+            padding: 5px;
        }
 
-       #name,#Familyname {
-           font-size: 45px;
-           color: blanchedalmond;
+       
+       
+       #award-list{
+           font-size: 25px;
+           color: whitesmoke;
+           
        }
+       h4{
+           color: blanchedalmond;
+           font-size: 40px;
+           border-bottom: 5px solid #D93D59;
+           padding: 5px;
+           text-align: center;
+       }
+       h5 {font-size: 40px;
+            color: blanchedalmond;
+            border-bottom: 5px solid #D93D59;
+            padding: 5px;
+            text-align: center;
+       }
+      
+       #lifelist {
+        font-size: 25px;
+        color: whitesmoke;
+        padding: 10px;
+        
+       }    
+       
     </style>
     </head>
     
     <body>
-        <h1>Prof.Majid Samii</h1>
-        <h2>Simply,the best neurosurgeon in the world</h2>
+        <div id="main">
+            <h1 id="title">Prof.Majid Samii</h1>
+
+            <div id="img-div">
+                <img id="image" src="https://alchetron.com/cdn/majid-samii-593076a2-24d1-467c-ab53-0e6e853763c-resize-750.jpeg" alt="majidsamii">
         
-        <div class="header1">
-        <p id="quote1">Majid Samii is an Iranian neurosurgeon
-            and medical scientist.<br>He has been awarded 
-        many times as a best neurosurgeon in the world.  </p>
-        <img id="pic1" src="samii2.jpeg" alt="majidsamii">
-        </div>
+            <h2 id="img-caption">Simply,the best neurosurgeon in the world!</h2>
+            </div>
 
-        <div class="Biography">
+            <div id="tribute-info">
             <h3><strong>Biography</strong></h3>
-            <p id="name">Name: Majid<p>
-            <p id="Familyname">Familyname: Samii </p>
+            
+            <p id="quote1">Majid Samii is an Iranian neurosurgeon
+                and medical scientist.<br>He has been awarded 
+            many times as a best neurosurgeon in the world.  </p>
+            
+            <ul id="lifelist">
+                <h4>Timeline of Prof.Samii's life:</h4>
+                <li>1937:Born in Tehran, Iran.</li>
+                <li>1950:Finished highschool.</li>
+                <li>1951:Moved to germany.</li>
+                <li>1970:Recieved PHD of neurosurgeon.</li>
+                <li>1977:President of neurosurgeon deparmtent, Hannover, Germany.
+                <li>1997-2001: President of international neurosurgeon organization</li>
+                <li>2004:President of Milad's hostipal, Iran</li>
+                <li>2008-present:Created a hostipal for neurosurgeon, Rasht, Iran</li>
+            </ul>
+            
+            <ul id="award-list">
+                <h5><strong>Awards</strong></h5>
+                <li>2006:<em> Iranian Science and Culture Hall of Fame.</em>  
+                <li>2008: <em> Award of the People's Republic of China.</em></li>   
+                <li>2010: <em> Society of America Medal Recipient.</em></li>  
+                <li>2013:<em>Leibniz-Ring-Hannover  Prize winner.</em></li>  
+                <li>2013: <em> Elected by the World Neurosurgery journal.</em></li>
+                <li>2014: <em>World top neurosurgeon and Golden Neuron Award Winner.</em></li> 
 
+            </div>
+            <a id="tribute-link" href="https://en.wikipedia.org/wiki/Majid_Samii" target="_blank">More info </a>
         </div>
 
+
+    
 
     </body>
 </html>
